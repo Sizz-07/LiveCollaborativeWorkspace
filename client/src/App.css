@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.room-box {
+    width: 350px;
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.room-box h2 {
+    margin-top: 0;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.workspace {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    color: white;
+}
+
+.workspace-header {
+    height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #252526;
+    border-bottom: 1px solid #444;
+}
+
+.workspace-header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.workspace-header span {
+    font-size: 13px;
+    color: #bbb;
+}
+
+.user-info {
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.workspace-body {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.editor-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.editor-header {
+    height: 45px;
+    background: #333333;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing {
+    color: #7dd3fc !important;
+}
+
+.sidebar {
+    width: 300px;
+    background: #252526;
+    border-left: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.panel h2 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.online {
+    width: 9px;
+    height: 9px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.activity-panel {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.activity {
+    padding: 7px 0;
+    font-size: 13px;
+    color: #bbb;
+    border-bottom: 1px solid #333;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    background: white;
+    color: #222;
+}
+
+.success {
+    border-left: 4px solid #22c55e;
+}
+
+.error {
+    border-left: 4px solid #ef4444;
+}.member small {
+    margin-left: auto;
+    color: #7dd3fc;
+    font-size: 11px;
+}
